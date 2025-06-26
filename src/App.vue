@@ -5,7 +5,7 @@ import Staggered from './components/Staggered.vue'
 
 const durationModel = ref(1200);
 const delayModel = ref(300);
-const strokeWidthModel = ref(300);
+const strokeWidthModel = ref(700);
 
 const duration = computed(() => durationModel.value / 1000);
 const delay = computed(() => delayModel.value / 1000);

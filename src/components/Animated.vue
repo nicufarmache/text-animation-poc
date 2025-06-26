@@ -80,8 +80,8 @@ onMounted(() => {
   fill: var(--start-color);
   stroke: var(--accent-color);
   stroke-width: 0;
-  stroke-dasharray: 250, 1000;
-  stroke-dashoffset: 250;
+  stroke-dasharray: 1000, 250;
+  stroke-dashoffset: -250;
   stroke-linecap: round;
   stroke-linejoin: round;
   paint-order: fill stroke;
@@ -96,14 +96,14 @@ onMounted(() => {
   from {
     fill: var(--start-color);
     stroke-width: 0;
-    stroke-dashoffset: 250;
+    stroke-dashoffset: -250;
     animation-timing-function: ease-in;
   }
 
   15% {
     fill: var(--start-color);
     stroke-width: calc(var(--stroke-width) * 0.3);
-    stroke-dashoffset: 230;
+    stroke-dashoffset: -230;
     animation-timing-function: linear;
   }
 
