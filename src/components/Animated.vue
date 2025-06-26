@@ -41,7 +41,7 @@ onMounted(() => {
        '--animated-duration': `${props.duration}s`,
        '--stroke-width': `${props.strokeWidth}em`
     }">
-    <symbol :id="`text-${id}`"><text class="no-select" ref="text" x="0" y="100%" dy="-.2em">
+    <symbol :id="`text-${id}`"><text class="no-select" ref="text" x="0" y="100%" dy="-.225em">
         <slot></slot>
       </text></symbol>
     <mask :id="`mask-${id}`">
