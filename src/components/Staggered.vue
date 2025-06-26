@@ -1,9 +1,11 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, inject } from 'vue'
 import Animated from './Animated.vue'
 
-const DELAY = 0.3;
-const DURATION = 1.2;
+const delay = inject('delay');
+const duration = inject('duration');
+const strokeWidth = inject('strokeWidth');
+
 const content = ref('content');
 const letters = ref([]);
 
@@ -19,7 +21,7 @@ onMounted(() => {
     <span ref="content">
       <slot></slot>
     </span>
-    <Animated v-for="(letter, index) in letters" :key="index" :delay="index * DELAY" :duration="DURATION">{{ letter }}</Animated>
+    <Animated v-for="(letter, index) in letters" :key="index" :delay="index * delay" :duration="duration" :stroke-width="strokeWidth">{{ letter }}</Animated>
   </span>
 </template>
 

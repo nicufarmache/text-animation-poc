@@ -10,11 +10,11 @@
 <style scoped>
 .hero {
   width: 100%;
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 170px);
   padding-bottom: 1vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3vh;
+  font-size: 4vh;
 }
 </style>
