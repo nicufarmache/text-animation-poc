@@ -89,15 +89,24 @@ const page = ref(0);
 label {
   display: flex;
   gap: 1em;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
 }
 .value {
   width: 70px;
   text-align: right;
+
+  @media (max-width: 480px) {
+    text-align: left;
+  }
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+}</style>

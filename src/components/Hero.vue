@@ -16,5 +16,10 @@
   justify-content: center;
   align-items: center;
   font-size: 4vh;
+
+  @media (max-width: 768px) {
+    font-size: 1.5vh;
+    min-height: calc(30vh);
+  }
 }
 </style>

@@ -40,7 +40,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -74,9 +74,10 @@ input[type="range"] {
   vertical-align: text-top;
 }
 
-navigation {
+nav {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -86,6 +87,7 @@ navigation {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 3em;
 }
 
