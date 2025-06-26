@@ -10,7 +10,7 @@
 <style scoped>
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 130px);
   padding-bottom: 1vh;
   display: flex;
   justify-content: center;
